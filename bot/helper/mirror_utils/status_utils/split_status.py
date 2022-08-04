@@ -24,7 +24,8 @@ class SplitStatus:
 
     def path(self):
         return self.__path
-
+    def size_raw(self):
+        return self.__size
     def size(self):
         return get_readable_file_size(self.__size)
 
