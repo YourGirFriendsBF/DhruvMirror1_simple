@@ -470,7 +470,12 @@ try:
 except KeyError:
     APPDRIVE_EMAIL = None
     APPDRIVE_PASS = None
-    
+try:
+    TITLE_NAME = getConfig('TITLE_NAME')
+    if len(TITLE_NAME) == 0:
+        TITLE_NAME = 'Dhruv-Mirror'
+except KeyError:
+    TITLE_NAME = 'Dhruv-Mirror'    
 try:
     TOKEN_PICKLE_URL = getConfig('TOKEN_PICKLE_URL')
     if len(TOKEN_PICKLE_URL) == 0:
