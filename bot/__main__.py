@@ -139,7 +139,7 @@ help_string = f'''
 Hei, Need Help!!
 '''
 help = telegraph.create_page(
-        title='Helios-Mirror Help',
+        title='Dhruv-Mirror Help',
         content=help_string_telegraph,
     )["path"]
 
